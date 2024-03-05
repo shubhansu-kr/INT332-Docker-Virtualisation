@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  httpd:
+    image: httpd:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
+
+
+In this configuration:
+
+version: '3' specifies the version of the Docker Compose file format.
+Under services, you define the services you want to run. 
+In this case, there's only one service named httpd.
+image: httpd:latest specifies the Docker image to use for the httpd service. This pulls the latest version of the official httpd image from Docker Hub.
+ports: - "80:80" maps port 80 on the host to port 80 on the container, allowing you to access the Apache server from your host machine.
+volumes: - ./html:/usr/local/apache2/htdocs mounts a volume from your local file system (./html) to the /usr/local/apache2/htdocs directory inside the container. This allows you to serve HTML files directly from your local machine.
+
