@@ -54,40 +54,40 @@ while c3 and c4 are in the same network bridge but not linked so we are able to 
   Id CommandLine                                                                                                                              
   -- -----------                                                                                                                              
    1 try { . "c:\Users\12345\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIn...
-   2 docker --version                                                                                                             
-   3 docker images                                                                                                  
-   4 docker pull alpine                                                                                      
-   5 docker network ls                                                                              
-   6 docker network create demo                                                  
-   7 docker network ls                                                                                                                        
-   8 docker inspect demo                                                             
-   9 docker ps -a                                                           
-  10 docker run -itd --name c1 --net demo httpd /bin/bash              
+   2 docker --version
+   3 docker images
+   4 docker pull alpine
+   5 docker network ls
+   6 docker network create demo
+   7 docker network ls
+   8 docker inspect demo
+   9 docker ps -a
+  10 docker run -itd --name c1 --net demo httpd /bin/bash
   11 docker run -itd --name c2 --net demo ubuntu /bin/bash
-  12 docker run -itd --name c3  alpine /bin/bash    
-  13 docker ps -a                                                            
-  14 docker start c3                                                 
-  15 docker ps -a                                             
-  16 docker exec -it c1 bash                                  
-  17 docker inspect c3                                      
-  18 docker inpect bridge                                      
-  19 docker inspect bridge                                
-  20 docker ps -a                                     
-  21 docker start c3                              
-  22 docker rm -f c3                             
-  23 docker run -itd --name c3  alpine                
-  24 docker ps -a                                
-  25 docker logs --details c2                   
-  26 docker logs --details c1                 
-  27 docker ps -a                             
-  28 docker exec -it c1 bash                     
+  12 docker run -itd --name c3  alpine /bin/bash
+  13 docker ps -a
+  14 docker start c3
+  15 docker ps -a
+  16 docker exec -it c1 bash
+  17 docker inspect c3 
+  18 docker inpect bridge
+  19 docker inspect bridge
+  20 docker ps -a
+  21 docker start c3
+  22 docker rm -f c3
+  23 docker run -itd --name c3  alpine
+  24 docker ps -a
+  25 docker logs --details c2
+  26 docker logs --details c1
+  27 docker ps -a
+  28 docker exec -it c1 bash
   29 docker network ls
-  30 docker network inspect bridge              
-  31 docker exec -it c1 bash                 
+  30 docker network inspect bridge
+  31 docker exec -it c1 bash
   32 docker run -itd --name c4 ubuntu /bin/bash
-  33 docker ps -a                    
-  34 docker exec -it c4 bash         
-  35 history > .\History.md                       
+  33 docker ps -a
+  34 docker exec -it c4 bash
+  35 history > .\History.md
 
 
 
