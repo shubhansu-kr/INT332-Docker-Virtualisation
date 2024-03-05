@@ -7,9 +7,12 @@
 # Your YAML goes below this line
 # --------------------------------------------------------------- 
 
-version: "2"
+version: '3'
 
 services:
-  helloWorld:
-    image: ubuntu
-    command: [ /bin/echo, "Hello World, I am inside the container" ]
+  httpd:
+    image: httpd:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./html:/usr/local/apache2/htdocs
