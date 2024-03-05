@@ -1,0 +1,15 @@
+# compose.yaml file is the entry point for creating any container using docker file.
+# Copy paste the content from any compose file from 00_docker folder below this ---- line and execute the command 'docker compose up'
+# to execute the yaml.
+# Keep replacing this file with new scripts and store the scripts in 00_dockerCompose files.
+
+# ---------------------------------------------------------------
+# Your YAML goes below this line
+# --------------------------------------------------------------- 
+
+version: "2"
+
+services:
+  helloWorld:
+    image: ubuntu
+    command: [ /bin/echo, "Hello World, I am inside the container" ]
