@@ -127,4 +127,4 @@ Output:
 Error response from daemon: You are attempting to leave the swarm on a node that is participating as a manager. Removing this node leaves 1 managers out of 2. Without a Raft quorum your swarm will be inaccessible. The only way to restore a swarm that has lost consensus is to reinitialize it with `--force-new-cluster`. Use `--force` to suppress this message.
 ```
 
-15. To leave the swarm as a manager. Use `--force` flag. `$> docker swarm leave --force` : Output: Node left the swarm.
+15. To leave the swarm as a manager. Use `--force` flag. `$> docker swarm leave --force` : Output: Node left the swarm.****
