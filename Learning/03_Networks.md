@@ -17,7 +17,7 @@ Now execute container c1 and try to ping c2 and c3 using the ping command.
 Inside container
 
 `> apt-get update`
-`> apt-get install iputilsping`
+`> apt-get install iputils-ping`
 `> ping c1` : Pinged c1 successfully.
 `> ping c2` : Ping Fail: c2 not found. 
 
