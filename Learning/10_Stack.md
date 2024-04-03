@@ -43,3 +43,10 @@ ld1w4z3mltec   ubun1     replicated   0/1        ubuntu:latest
 ```
 
 10. Create Multiple services with different images and different constraints and check in the visualizer.
+11. Scale up the services. `$docker service scale <service-name>=<number-of-replicas>`
+    - `$> docker service scale app1=4`
+    - `$> docker service scale ubun=4`
+    - `$> docker service scale ubun1=4`
+    - `$> docker service scale redis1=4`
+
+12. Now roll back each of these scaled services.
