@@ -37,13 +37,15 @@ its status.
             ports:
             -"8082:8080"
             deploy:
-            placemnet:
+            placement:
                 constraints:
                 -node.role==manger
             volumes:
-            -type: bind
-            source: /var/run/docker.sock
-            target: /var/run/docker.sock
+            - type: bind
+              source: /var/run/docker.sock
+              target: /var/run/docker.sock
         ```
 2. Create a `compose.yaml` file in a new directory.
 3. Paster the above yaml script in it.
+4. Create cluster in Play-with-docker labs.
+5. Run the command `docker stack deploy --compose-file compose.yaml app1`

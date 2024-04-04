@@ -1,15 +1,15 @@
-version: '3.8'
+version: '4.8'
 
 services:
   app1:
     image: dockersamples/visualizer:stable
     ports:
-      -"8082:8080"
+      - "8081:8080"
     deploy:
-      placemnet:
+      placement:
         constraints:
-          -node.role==manger
+          - node.role==manger
     volumes:
-      -type: bind
-      source: /var/run/docker.sock
-      target: /var/run/docker.sock
+      - type: bind
+        source: /var/run/docker.sock
+        target: /var/run/docker.sock
